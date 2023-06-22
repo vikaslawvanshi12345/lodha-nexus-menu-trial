@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Lodha Nexus | Home</title>
+<meta name="description" content="We are dedicated to empower people with the tools and knowledge they need to be reach their full potential. 
+With our unique blend of resources, guidance, and encouragement, we strive to create a brighter future for all.">
+<meta name="keywords" content="Lodha samaj shiksha foundation working for career guidance, skill development and employment. 
+">
+<meta name="author" content="Vikas Lawvanshi">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles_searchbar.css">
+
+<Script>
+
+isMouseover = false;
+isDragging = false;
+
+function MouseDownLayer(e)
+{
+   documentTag = "HTML";
+   srcElement = e.target;  
+   layerElement = document.getElementById("Layer1");  
+
+   while (srcElement.id != "Layer1TitleBar" && srcElement.tagName != documentTag)
+   {
+      srcElement = srcElement.parentNode;
+   }  
+   if (srcElement.id == "Layer1TitleBar")
+   {
+      offsetX = e.clientX;
+      offsetY = e.clientY;
+      currentX = parseInt(layerElement.style.left);
+      currentY = parseInt(layerElement.style.top);
+      isDragging = true;
+      document.onmousemove = MouseMoveLayer;
+  }
+}
+
+function MouseMoveLayer(e)
+{
+   if (!isDragging) return;
+   
+   layerElement.style.left = currentX+e.clientX-offsetX + "px"; 
+   layerElement.style.top = currentY+e.clientY-offsetY + "px";
+   return false;  
+}
+
+document.onmousedown = MouseDownLayer;
+document.onmouseup = Function("isDragging=false");
+
+</Script>
+</head>
+<body>
+<div id="container">
+<div id="wb_ResponsiveMenu1" style="position:absolute;left:1px;top:0px;width:969px;height:73px;z-index:0;">
+<label class="toggle" for="ResponsiveMenu1-submenu" id="ResponsiveMenu1-title"><span id="ResponsiveMenu1-icon"><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></span></label>
+<input type="checkbox" id="ResponsiveMenu1-submenu">
+<ul class="ResponsiveMenu1" id="ResponsiveMenu1" role="menu">
+<li role="menuitem"><a href="" class="nav-link"><i class="fa fa-home fa-2x">&nbsp;</i><br>Home</a></li>
+<li role="menuitem">
+<label for="ResponsiveMenu1-submenu-0" class="toggle"><i class="fa fa-book fa-2x">&nbsp;</i>About&nbsp;Us<b class="arrow-down"></b></label>
+<a href="javascript:void(0)" class="nav-link"><i class="fa fa-book fa-2x">&nbsp;</i><br>About&nbsp;Us<b class="arrow-down"></b></a>
+<input type="checkbox" id="ResponsiveMenu1-submenu-0">
+<ul role="menu">
+<li role="menuitem"><a href="" class="nav-link">Who&nbsp;we&nbsp;are</a></li>
+<li role="menuitem"><a href="" class="nav-link">Vision&nbsp;&amp;&nbsp;Mission</a></li>
+<li role="menuitem"><a href="" class="nav-link">Our&nbsp;members</a></li>
+<li role="menuitem"><a href="" class="nav-link">Journey&nbsp;of&nbsp;Shiksha&nbsp;Foundation</a></li>
+<li role="menuitem"><a href="" class="nav-link">Annual&nbsp;Reports</a></li>
+<li role="menuitem"><a href="" class="nav-link">Media</a></li>
+</ul>
+</li>
+<li role="menuitem">
+<label for="ResponsiveMenu1-submenu-1" class="toggle"><i class="fa fa-sitemap fa-2x">&nbsp;</i>Career/Job<b class="arrow-down"></b></label>
+<a href="javascript:void(0)" class="nav-link"><i class="fa fa-sitemap fa-2x">&nbsp;</i><br>Career/Job<b class="arrow-down"></b></a>
+<input type="checkbox" id="ResponsiveMenu1-submenu-1">
+<ul role="menu">
+<li role="menuitem"><a href="" class="nav-link">Career&nbsp;Exploration</a></li>
+<li role="menuitem"><a href="" class="nav-link">Apprenticeship&nbsp;Training</a></li>
+<li role="menuitem"><a href="" class="nav-link">Career&nbsp;Saathi</a></li>
+<li role="menuitem"><a href="" class="nav-link">Events&nbsp;&amp;&nbsp;Workshop&nbsp;schedules</a></li>
+<li role="menuitem"><a href="" class="nav-link">Parental&nbsp;guidance</a></li>
+</ul>
+</li>
+<li role="menuitem">
+<label for="ResponsiveMenu1-submenu-2" class="toggle"><i class="fa fa-laptop fa-2x">&nbsp;</i>Toolkit<b class="arrow-down"></b></label>
+<a href="javascript:void(0)" class="nav-link"><i class="fa fa-laptop fa-2x">&nbsp;</i><br>Toolkit<b class="arrow-down"></b></a>
+<input type="checkbox" id="ResponsiveMenu1-submenu-2">
+<ul role="menu">
+<li role="menuitem"><a href="./Tools.html" class="nav-link">Edu&nbsp;Tools</a></li>
+<li role="menuitem"><a href="./Tools.html" class="nav-link">Web&nbsp;Tools</a></li>
+<li role="menuitem"><a href="./Tools.html" class="nav-link">Privacy&nbsp;Tools</a></li>
+<li role="menuitem"><a href="./Tools.html" class="nav-link">Dev&nbsp;Tools</a></li>
+<li role="menuitem"><a href="./Tools.html" class="nav-link">Telegram&nbsp;Tools</a></li>
+<li role="menuitem"><a href="./Tools.html" class="nav-link">Torrent&nbsp;Tools</a></li>
+<li role="menuitem"><a href="./Tools.html" class="nav-link">Productivity&nbsp;Tools</a></li>
+<li role="menuitem"><a href="./Tools.html" class="nav-link">OSINT&nbsp;framework</a></li>
+</ul>
+</li>
+<li role="menuitem">
+<label for="ResponsiveMenu1-submenu-3" class="toggle"><i class="fa fa-users fa-2x">&nbsp;</i>Contact&nbsp;Us<b class="arrow-down"></b></label>
+<a href="javascript:void(0)" class="nav-link"><i class="fa fa-users fa-2x">&nbsp;</i><br>Contact&nbsp;Us<b class="arrow-down"></b></a>
+<input type="checkbox" id="ResponsiveMenu1-submenu-3">
+<ul role="menu">
+<li role="menuitem"><a href="" class="nav-link">Samiti&nbsp;Officials</a></li>
+<li role="menuitem"><a href="" class="nav-link">Address</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="Layer1" style="position:absolute;text-align:center;left:0px;top:73px;width:970px;height:56px;z-index:1;">
+   <div class="container">
+      <form action="https://www.google.com/search" class="search" id="search-bar">
+          <input type="search" placeholder="Type something..." name="q" class="search__input">
+
+          <div class="search__button" id="search-button">
+              <i class="ri-search-2-line search__icon"></i>
+              <i class="ri-close-line search__close"></i>
+          </div>
+      </form>
+  </div>
+
+  <!--=============== MAIN JS ===============-->
+  <script src="assets/js/main_searchbar.js"></script>
+<div id="Layer1_Container" style="width:970px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+</div>
+</div>
+</div>
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/LodhaNexus3.css" rel="stylesheet">
+<link href="css/menu_navigation.css" rel="stylesheet">
+</body>
+</html>
